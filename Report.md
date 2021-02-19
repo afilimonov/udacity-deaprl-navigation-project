@@ -41,7 +41,7 @@ Both DQN and DDQN agents in this project employ epsilong greedy action selection
 
 The graphs below depict DQN and DDQN training scores
 
-![plot of rewards](.dqn-replay-graph.jpg)
+![plot of rewards](dqn-replay-graph.jpg)
 ![plot of rewards](ddqn-replay-graph.jpg)
 
 ### Testing Performance Reports
