@@ -51,12 +51,18 @@ The graphs below depict DQN and DDQN training scores
 ![plot of rewards](dqn-replay-test-graph.jpg)
 ![plot of rewards](ddqn-replay-test-graph.jpg)
 
-# Ideas for Future Work
+### Ideas for Future Work
 
 In this project I used two approaches: DQN and DDQN with Experience Replay which solved the enviroment by getting +13 average reward relatively easily. However there other approaches and improvements I could explore
 
 - Implement [Prioritized Experienced Replay](https://arxiv.org/abs/1511.05952).
 - Implement [Dueling Q-Networks](https://arxiv.org/abs/1511.06581).
 - Implement [Rainbow](https://arxiv.org/abs/1710.02298) that combines all proposed imporovents for the orignal DQN.
+- Setup local environment and watch trained agents in action.
 
 After completing this project I'm planning to work optional Learn from Pixels solution presents a very intersiting variation on the orignal project problem. I'm curious to see how CNN based model would perform in this setup.
+
+### Trained Models
+
+* DQN Agent: dqn-basic-replay.pth
+* DDQN Agent: dqn-double-agent.pth
