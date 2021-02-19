@@ -30,5 +30,9 @@ In this project I also used Double Deep Q-Network (DDQN) agent. DDQN was introdu
 
 #### Experience Replay
 
-Both DQN and DDQN agents use Experience Replay. Experience Replay logic inlcudes replay buffer that storegs history of agent interactions with the environment also known as experiences. The agent then can sample stored experiences during the learning step thus breakg correlation between consequtive experiences. This imporvoes learning process by preventing Q-Larning algorithm becoming biased towards sequential experiences. The implementation of the replay buffer can be found
+Both DQN and DDQN agents use Experience Replay. Experience Replay logic inlcudes replay buffer that storegs history of agent interactions with the environment also known as experiences. The agent then can sample stored experiences during learning process thus breaking correlation between consequtive experiences. This imporvoes learning process by preventing Q-Larning algorithm becoming biased towards sequential experiences. The implementation of the replay buffer can be found
 [here](dqn/replaybuffer.py).
+
+#### Epsilong Greedy
+
+Both DQN and DDQN agents in this project employ epsilong greedy action selection during traing process. This enables the algorithm to balance exploring and exploiting during the learing by randomly picking actions instead of policy action based on probability defined by epsilon hyperparameter. DQN and DDQN agents train() method accepts paremeters to set starting and endiing epsilon values as well as epsilon decay.
