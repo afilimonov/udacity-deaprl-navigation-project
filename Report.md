@@ -35,10 +35,11 @@ Both DQN and DDQN agents use Experience Replay. Experience Replay logic inlcudes
 
 #### Epsilong Greedy
 
-Both DQN and DDQN agents in this project employ epsilong greedy action selection during traing process. This enables the algorithm to balance exploring and exploiting during the learing by randomly picking actions instead of policy action based on probability defined by epsilon hyperparameter. DQN and DDQN agents train() method accepts paremeters to set starting and endiing epsilon values as well as epsilon decay. The best (fastest to solve the environment) epsilon parameters discovered through experimentation: 
+Both DQN and DDQN agents in this project employ epsilong greedy action selection during traing process. This enables the algorithm to balance exploring and exploiting during the learing by randomly picking actions instead of policy action based on probability defined by epsilon hyperparameter. DQN and DDQN agents train() method accepts paremeters to set starting and endiing epsilon values as well as epsilon decay. The best (fastest to solve the environment) epsilon parameters discovered through experimentation: eps_start=1.0, eps_end=0.02, eps_decay=0.98
 
 ### Training Performance Reports
 
 The graphs below depict DQN and DDQN training scores
+![plot of rewards](./dqn-replay-graph.jpg)
 
 
