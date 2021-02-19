@@ -72,7 +72,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 ### Instructions
 
-  To train and test the agent, start jupyter notebook, open `Navigation.ipynb` and execute! For more information, please check instructions inside the notebook.
+  To train and test the agent, start jupyter notebook, open `Navigation.ipynb` and execute the cells. The notebook contains additional inforamation on all steps requried to train and test the agent.
 
 #### Additional Information
 
