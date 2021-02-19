@@ -37,6 +37,22 @@ Both DQN and DDQN agents use Experience Replay. Experience Replay logic inlcudes
 
 Both DQN and DDQN agents in this project employ epsilong greedy action selection during traing process. This enables the algorithm to balance exploring and exploiting during the learing by randomly picking actions instead of policy action based on probability defined by epsilon hyperparameter. DQN and DDQN agents train() method accepts paremeters to set starting and endiing epsilon values as well as epsilon decay. The best (fastest to solve the environment) epsilon parameters discovered through experimentation: eps_start=1.0, eps_end=0.02, eps_decay=0.98
 
+#### Hyperparameters
+
+In addition to neural network configuration and epsilon values discussed in the previous secton the table below depicts other hyperparmeters used with DQN and DDQN agents.
+
+
+| Hyperparameter | Value | Description |
+| --- | --- | ---- |
+| lr(alpha) | 0.0005 | Learning rate
+| gamma | 0.99 | Discount rate of future rewards |
+| seed | 123 |  Random seed used to configure starting weights in DQN and DDQN |
+| buffer_size | 100000 | Replay buffer size |
+| batch_size | 64 | Min-batch size when sampling experiences from the replay buffer
+| tau | 0.001 | for soft update of target parameters |
+| update_every | 4 | Frequency of neural network updatess |
+ 
+
 ### Training Performance 
 
 #### DQN Agent training log
