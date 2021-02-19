@@ -18,4 +18,13 @@ Learning algorithm is used to find an optimal policy that maximizes the reward f
 
 #### Deep Q-Network
 
-Deep Q-Network (DQN) uses Q-Function that estimates expected reward for all actions for all environment states. In DQN a neural network (NN) is used to approximate Q-Fuction. In this project I constructed a fully connected NN with 3 layers with 64, 64 and 4 (size of the action space) nodes. I used RELU activation function for the first two layers. The NN implementation can be found [here](dqn/model.py) 
+Deep Q-Network (DQN) uses Q-Function that estimates expected reward for all actions for all environment states. In DQN a neural network (NN) is used to approximate Q-Fuction. In this project I constructed a fully connected NN with 3 layers with 64, 64 and 4 (size of the action space) nodes. I used RELU activation function for the first two layers. The NN implementation can be found [here](dqn/model.py).
+
+#### DQN Agent
+
+Basic DQN Agent used in this project implments all required log for interacting with the environment and learning the optimal policy. It also provides train() and test() methods for training and testing the agent. The DQN source code can be found [here](dqn/angent.py)
+
+#### Double Deep Q-Network Agen
+
+In this project I also used Double Deep Q-Network (DDQN) agent. DDQN was introduced to overcome a problem of [overestimating Q-values](https://www.ri.cmu.edu/pub_files/pub1/thrun_sebastian_1993_1/thrun_sebastian_1993_1.pdf). DDQN addresses this issue by having two sets of NN parameters one used to select action and another to evaluate it. The DDQN agent is a subclass of DQN agent it reuses all logic and underlying neural networks. It overrites learn() method to implement the logic of using diferent sets of parameters to select and evalutation action. DDQN agent source code can found [here](dqn/doubleagent.py).
+
