@@ -48,8 +48,8 @@ In addition to neural network configuration and epsilon values discussed in the 
 | gamma | 0.99 | Discount rate of future rewards |
 | seed | 123 |  Random seed used to configure starting weights in DQN and DDQN |
 | buffer_size | 100000 | Replay buffer size |
-| batch_size | 64 | Min-batch size when sampling experiences from the replay buffer
-| tau | 0.001 | for soft update of target parameters |
+| batch_size | 64 | Mini-batch size when sampling experiences from the replay buffer
+| tau | 0.001 | Interpolation parameter when copying onlne network weights to target network |
 | update_every | 4 | Frequency of neural network updatess |
  
 
