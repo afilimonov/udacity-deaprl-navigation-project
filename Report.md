@@ -37,14 +37,68 @@ Both DQN and DDQN agents use Experience Replay. Experience Replay logic inlcudes
 
 Both DQN and DDQN agents in this project employ epsilong greedy action selection during traing process. This enables the algorithm to balance exploring and exploiting during the learing by randomly picking actions instead of policy action based on probability defined by epsilon hyperparameter. DQN and DDQN agents train() method accepts paremeters to set starting and endiing epsilon values as well as epsilon decay. The best (fastest to solve the environment) epsilon parameters discovered through experimentation: eps_start=1.0, eps_end=0.02, eps_decay=0.98
 
-### Training Performance Reports
+### Training Performance 
+
+#### DQN Agent training log
+
+```
+Episode 100	Average Score: 3.44
+Episode 200	Average Score: 8.74
+Episode 300	Average Score: 12.72
+Episode 313	Average Score: 13.09
+Environment solved in 213 episodes!	Average Score: 13.09
+```
+
+#### DDQN Agent training log
+
+```
+Episode 100	Average Score: 3.23
+Episode 200	Average Score: 8.37
+Episode 300	Average Score: 12.09
+Episode 336	Average Score: 13.03
+Environment solved in 236 episodes!	Average Score: 13.03
+```
+
+#### Training peformance graphs
 
 The graphs below depict DQN and DDQN training scores
 
 ![plot of rewards](dqn-replay-graph.jpg)
 ![plot of rewards](ddqn-replay-graph.jpg)
 
-### Testing Performance Reports
+### Testing Performance
+
+#### DQN Agent testing log
+
+```
+Episode 1	Average Score: 22.00
+Episode 2	Average Score: 19.50
+Episode 3	Average Score: 17.33
+Episode 4	Average Score: 16.25
+Episode 5	Average Score: 16.40
+Episode 6	Average Score: 15.33
+Episode 7	Average Score: 14.86
+Episode 8	Average Score: 14.25
+Episode 9	Average Score: 15.11
+Episode 10	Average Score: 15.60
+```
+
+#### DDQN Agent testing log
+
+```
+Episode 1	Average Score: 8.00
+Episode 2	Average Score: 14.00
+Episode 3	Average Score: 10.33
+Episode 4	Average Score: 13.75
+Episode 5	Average Score: 12.80
+Episode 6	Average Score: 11.50
+Episode 7	Average Score: 9.86
+Episode 8	Average Score: 9.50
+Episode 9	Average Score: 10.78
+Episode 10	Average Score: 10.00
+```
+
+#### Testing performance graphs
 
 The graphs below depict DQN and DDQN training scores
 
@@ -53,7 +107,7 @@ The graphs below depict DQN and DDQN training scores
 
 ### Ideas for Future Work
 
-In this project I used two approaches: DQN and DDQN with Experience Replay which solved the enviroment by getting +13 average reward relatively easily. However there other approaches and improvements I could explore
+In this project I used two approaches: DQN and DDQN with Experience Replay which solved the enviroment by getting +13 average reward relatively easily. However there are other approaches and improvements I could explore:
 
 - Implement [Prioritized Experienced Replay](https://arxiv.org/abs/1511.05952).
 - Implement [Dueling Q-Networks](https://arxiv.org/abs/1511.06581).
