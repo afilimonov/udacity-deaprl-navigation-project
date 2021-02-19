@@ -49,4 +49,4 @@ The graphs below depict DQN and DDQN training scores
 The graphs below depict DQN and DDQN training scores
 
 ![plot of rewards](./dqn-replay-test-graph.jpg)
-![plot of rewards](./dqn-replay-test-graph.jpg)
+![plot of rewards](./ddqn-replay-test-graph.jpg)
