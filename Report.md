@@ -50,3 +50,12 @@ The graphs below depict DQN and DDQN training scores
 
 ![plot of rewards](./dqn-replay-test-graph.jpg)
 ![plot of rewards](./ddqn-replay-test-graph.jpg)
+
+# Ideas for Future Work
+
+In this project I use two approaches DQN and DDQN which solved the enviroment by getting +13 average reward relatively easily. However there other approaches and improvements I could explore
+
+- Implement [Prioritized Experienced Replay](https://arxiv.org/abs/1511.05952)
+- Implement [Dueling Q-Networks](https://arxiv.org/abs/1511.06581)
+
+After completing this project I'm planning to work optional Learn from Pixels solution presents a very intersiting variation on the orignal project problem. I'm curious to see how CNN based model would perform in this setup.
