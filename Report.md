@@ -125,7 +125,7 @@ The graphs below depict DQN and DDQN training scores
 
 In this project I used two approaches: DQN and DDQN with Experience Replay which solved the enviroment by getting +13 average reward relatively easily. However there are other approaches and improvements I could explore:
 
-- Implement [Prioritized Experienced Replay](https://arxiv.org/abs/1511.05952).
+- Implement [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952).
 - Implement [Dueling Q-Networks](https://arxiv.org/abs/1511.06581).
 - Implement [Rainbow](https://arxiv.org/abs/1710.02298) that combines all proposed imporovents for the orignal DQN.
 - Setup local environment and watch trained agents in action.
